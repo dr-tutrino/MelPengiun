@@ -1,6 +1,9 @@
-# Sample AEM project template
+# Pengiun AEM project template
 
-This is a project template for AEM-based applications. It is intended as a best-practice set of examples as well as a potential starting point to develop your own functionality.
+This is a project for 6.4 AEM. It is built using Maven Archtype 13. 
+
+## Requirements
+* AEM 6.4 + SP6 - aem-service-pkg-6.4.6.zip
 
 ## Modules
 
