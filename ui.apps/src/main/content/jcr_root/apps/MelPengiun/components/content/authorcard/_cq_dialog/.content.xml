@@ -11,25 +11,29 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/coral/foundation/container">
                 <items jcr:primaryType="nt:unstructured">
-                    <bookTitle
+                    <title
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        required="{Boolean}true"
                         fieldLabel="Book title"
-                        name="./bookTitle"/>
-                    <authorName
+                        name="./title"/>
+                    <author
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            required="{Boolean}true"
                             fieldLabel="Author Name"
-                            name="./authorName"/>
-                    <image
+                            name="./author"/>
+                    <imagePath
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                            required="{Boolean}true"
                             fieldLabel="Image Thumbnail"
                             rootPath="/content/dam/MelPengiun"
-                            name="./image"/>
+                            name="./imagePath"/>
                     <link
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                            required="{Boolean}true"
                             fieldLabel="Link"
                             rootPath="/content/MelPengiun/en"
                             name="./link"/>
