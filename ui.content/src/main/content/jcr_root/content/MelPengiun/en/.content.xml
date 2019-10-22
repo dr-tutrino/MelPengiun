@@ -4,6 +4,8 @@
     <jcr:content
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2019-10-22T15:46:18.158+01:00"
+        cq:lastModifiedBy="admin"
         cq:template="/conf/MelPengiun/settings/wcm/templates/content-page"
         jcr:primaryType="cq:PageContent"
         jcr:title="English"
@@ -86,7 +88,16 @@
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="MelPengiun/components/content/sharing"/>
+                <authorcard
+                    jcr:created="{Date}2019-10-22T15:46:18.150+01:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2019-10-22T15:46:18.150+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="MelPengiun/components/content/authorcard"/>
             </responsivegrid>
         </root>
+        <image/>
     </jcr:content>
+    <book-details/>
 </jcr:root>
