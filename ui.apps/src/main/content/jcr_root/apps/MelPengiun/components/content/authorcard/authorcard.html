@@ -1,0 +1,23 @@
+<sly data-sly-test.isConfigured="${
+    properties.title &&
+    properties.author &&
+    properties.imagePath &&
+    properties.link}">
+    <div class="bookCard">
+            <a class="bookCard__link" href="${properties.link}.html">
+                <div class="book-card__wrapper">
+                    <img class="bookCard__image" src="${properties.imagePath}"/>
+                    <div class="book-card__content">
+                        <div class="bookCard__title">
+                            ${properties.title @ context='html'}
+                        </div>
+                        <div class="bookPromo__details__authorName">
+                            ${properties.author @ context='html'}
+                        </div>
+                    </div>
+                </div>
+            </a>
+    </div>
+</sly>
+<sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+     data-sly-call="${template.placeholder @ isEmpty=!isConfigured}"/>
