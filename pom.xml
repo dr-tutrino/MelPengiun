@@ -19,7 +19,7 @@
     <groupId>MelPengiun</groupId>
     <artifactId>MelPengiun</artifactId>
     <packaging>pom</packaging>
-    <version>MelPengiun</version>
+    <version>1.0.0-SNAPSHOT</version>
     <description>MelPengiun</description>
 
     <modules>
@@ -480,7 +480,7 @@
             <dependency>
                 <groupId>com.adobe.aem</groupId>
                 <artifactId>uber-jar</artifactId>
-                <version>6.3.0</version>
+                <version>6.4.0</version>
                 <classifier>apis</classifier>
                 <scope>provided</scope>
             </dependency>
