@@ -15,6 +15,9 @@ The relevant parts of the template are:
 * content/MelPengiun/en/book-details - example pages: used for the bookcard to link to
 * content/dam/MelPengiun - image assets: folder containing the book image for the bookcard to reference
 
+* conf/MelPengiun/settings/wcm/templates/content-page/structure - page structure: edited to remove unused structure components and include page title
+* apps/MelPengiun/components/content/title - title component: added basic styling
+
 This component does need a sling model so nothing to check in the core bundle.
 
 
