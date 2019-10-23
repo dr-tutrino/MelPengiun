@@ -5,15 +5,18 @@ This is a project for 6.4 AEM. It is built using Maven Archtype 13.
 ## Requirements
 * AEM 6.4 + SP6 - aem-service-pkg-6.4.6.zip
 
-## Modules
+## Relevant pieces
 
-The main parts of the template are:
+The relevant parts of the template are:
 
-* core: Java bundle containing all core functionality like OSGi services, listeners or schedulers, as well as component-related Java code such as servlets or request filters.
-* ui.apps: contains the /apps (and /etc) parts of the project, ie JS&CSS clientlibs, components, templates, runmode specific configs as well as Hobbes-tests
-* ui.content: contains sample content using the components from the ui.apps
-* ui.tests: Java bundle containing JUnit tests that are executed server-side. This bundle is not to be deployed onto production.
-* ui.launcher: contains glue code that deploys the ui.tests bundle (and dependent bundles) to the server and triggers the remote JUnit execution
+* bookcard component: including dialog for authoring, clientlib for styling, and HTL for content.
+* clientlib-base which has the bookcard clientlibs embeded
+* example content found MelPengiun/en page, which has an authored example of the bookcard.
+* example pages MelPengiun/en/book-details, which are example links for the bookcard to reference
+* image assets in dam/MelPengiun, which contain the images for the bookcard to reference
+
+This component does need a sling model so nothing to check in the core bundle.
+
 
 ## How to build
 
@@ -36,23 +39,6 @@ Or alternatively
 Or to deploy only the bundle to the author, run
 
     mvn clean install -PautoInstallBundle
-
-## Testing
-
-There are three levels of testing contained in the project:
-
-* unit test in core: this show-cases classic unit testing of the code contained in the bundle. To test, execute:
-
-    mvn clean test
-
-* server-side integration tests: this allows to run unit-like tests in the AEM-environment, ie on the AEM server. To test, execute:
-
-    mvn clean verify -PintegrationTests
-
-* client-side Hobbes.js tests: JavaScript-based browser-side tests that verify browser-side behavior. To test:
-
-    in the browser, open the page in 'Developer mode', open the left panel and switch to the 'Tests' tab and find the generated 'MyName Tests' and run them.
-
 
 ## Maven settings
 
