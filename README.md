@@ -9,11 +9,11 @@ This is a project for 6.4 AEM. It is built using Maven Archtype 13.
 
 The relevant parts of the template are:
 
-* bookcard component: including dialog for authoring, clientlib for styling, and HTL for content.
-* clientlib-base which has the bookcard clientlibs embeded
-* example content found MelPengiun/en page, which has an authored example of the bookcard.
-* example pages MelPengiun/en/book-details, which are example links for the bookcard to reference
-* image assets in dam/MelPengiun, which contain the images for the bookcard to reference
+* apps/MelPengiun/components/content/bookcard - bookcard component: including dialog for authoring, clientlib for styling, and HTL for content.
+* apps/MelPengiun/clientlibs/clientlib-base - which has the bookcard clientlibs embeded
+* content/MelPengiun/en - example content: an authored example of the bookcard.
+* content/MelPengiun/en/book-details - example pages: used for the bookcard to link to
+* content/dam/MelPengiun - image assets: folder containing the book image for the bookcard to reference
 
 This component does need a sling model so nothing to check in the core bundle.
 
