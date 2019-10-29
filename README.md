@@ -18,7 +18,7 @@ The relevant parts of the template are:
 * conf/MelPengiun/settings/wcm/templates/content-page/structure - page structure: edited to remove unused structure components and include page title
 * apps/MelPengiun/components/content/title - title component: added basic styling
 
-This component does need a sling model so nothing to check in the core bundle.
+This component does not need a sling model so nothing to check in the core bundle.
 
 
 ## How to build
